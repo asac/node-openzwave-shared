@@ -3,12 +3,9 @@
   "version": "1.1.6",
   "description": "Node.JS bindings for OpenZWave including management and security functions",
   "main": "./lib/openzwave-shared.js",
-  "dependencies": {
-    "nan": "^2.0.9"
-  },
   "scripts": {
     "test": "node test.js",
-    "preinstall": "node lib/install-ozw.js",
+    "preinstall": "npm install nan; node lib/install-ozw.js",
     "install": "node-gyp rebuild"
   },
   "repository": {
